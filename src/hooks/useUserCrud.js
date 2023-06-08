@@ -1,12 +1,12 @@
 import axios from "axios"
 import {useState} from "react"
-
+import { URL_APi } from "../../url"
 
 const useUserCrud = () => {
 
     const [users, setUsers] = useState()
 
-    const url = `https://users-crud.academlo.tech/users/`
+    const url =  URL_APi.url
 
     //GET
     const getAllUsers = () =>{
